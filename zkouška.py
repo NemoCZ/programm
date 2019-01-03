@@ -1,7 +1,7 @@
 ﻿import cv2
 import numpy as np
 
-cesta = "C:/Program Files/Python36/Lib/site-packages/cv2/data/"
+cesta = "D:\\Programy\\Python\\Lib\\site-packages\\cv2\\data\\"
 
 face_cascade = cv2.CascadeClassifier(cesta+'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cesta+"haarcascade_eye.xml")
