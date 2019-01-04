@@ -18,6 +18,8 @@ class MainWindow(tkinter.Frame):
 		self.label.grid(row=0,column=0)
 		self.button = tkinter.Button(text="Klikni hovado!",command=self.klikni)
 		self.button.grid(row=0,column=1)
+		self.button2 = tkinter.Button(text="Neuvěřitelné!",command=self.klikni2)
+		self.button2.grid(row = 0,column = 2)
 	def klikni(self):
 		self.aa += 1
 		if(self.button["foreground"]!="blue"):
@@ -27,6 +29,8 @@ class MainWindow(tkinter.Frame):
 			self.button["foreground"]="green"
 			self.button["text"]="To je ale sranda"
 		self.label.config(text=self.button["foreground"]+str(self.aa)+"Příliš žluťoučký kůň ")
+	def klikni2(self):
+		self.label.config(text="Testovací hovadina")
 		
 		
 		
