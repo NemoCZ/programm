@@ -1,7 +1,7 @@
 import tkinter
 
 class MainWindow(tkinter.Frame):
-	
+
 	def __init__(self,parent):
 		super().__init__(parent)
 		self.parent = parent
@@ -11,8 +11,8 @@ class MainWindow(tkinter.Frame):
 		self.parent.maxsize(1000, 600) # maximální velikost
 		self.parent.resizable(True, True) # je okno měnitelné
 		self.aa = 0
-		
-		
+
+
 	def create_widgets(self):
 		self.label = tkinter.Label(text="Hello světe")
 		self.label.grid(row=0,column=0)
@@ -27,13 +27,13 @@ class MainWindow(tkinter.Frame):
 			self.button["text"]="To je ale švanda"
 		else:
 			self.button["foreground"]="green"
-			self.button["text"]="To je ale sranda"
+			self.button["text"]="To je ale švanda"
 		self.label.config(text=self.button["foreground"]+str(self.aa)+"Příliš žluťoučký kůň ")
 	def klikni2(self):
 		self.label.config(text="Testovací hovadina")
-		
-		
-		
+
+
+
 
 root = tkinter.Tk()
 app = MainWindow(root)
