@@ -11,6 +11,7 @@ class MainWindow(tkinter.Frame):
 		self.parent.maxsize(1000, 600) # maximální velikost
 		self.parent.resizable(True, True) # je okno měnitelné
 		self.aa = 0
+		#uzrtuturturrurururturtu
 		
 		
 	def create_widgets(self):
